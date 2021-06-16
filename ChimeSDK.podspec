@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.author       = { "author" => "nguyenphu2810@gmail.com" }
   s.platform     = :ios, "9.0"
 
-  s.source = { :http => 'https://github.com/phu2810/VideoZoom_SDK/releases/download/1.0.2/lib_1.0.2.zip' }
+  s.source = { :http => 'https://github.com/phu2810/ChimeSDK/releases/download/1.0.0/ChimeSDK.zip' }
   s.requires_arc = true
   s.vendored_frameworks =  "ChimeSDK/AmazonChimeSDK.framework", "ChimeSDK/AmazonChimeSDKMedia.framework"
   s.pod_target_xcconfig = {
