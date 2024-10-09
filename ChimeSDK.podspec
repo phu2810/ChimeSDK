@@ -1,21 +1,18 @@
-Pod::Spec.new do |s|
-  s.name         = "ChimeSDK"
-  s.version      = "1.0.1"
-  s.summary      = "Pod for ChimeSDK"
-  s.description  = <<-DESC
-                  Pod for ChimeSDK.
-                   DESC
-  s.homepage     = "https://github.com/phu2810/ChimeSDK"
-  s.license      = "MIT"
-  s.author       = { "author" => "nguyenphu2810@gmail.com" }
-  s.platform     = :ios, "9.0"
-
-  s.source = { :http => 'https://github.com/phu2810/ChimeSDK/releases/download/1.0.1/ChimeSDK.zip' }
-  s.requires_arc = true
-  s.vendored_frameworks =  "ChimeSDK/AmazonChimeSDK.framework", "ChimeSDK/AmazonChimeSDKMedia.framework"
-  s.pod_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
-  }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+Pod::Spec.new do |spec|
+    spec.name          = 'PrivateFrameworkA'
+    spec.version       = '0.0.1'
+    spec.summary       = 'PrivateFrameworkA for testing'
+    spec.description   = 'This is an PrivateFrameworkA which will help us in achieving nothing'
+    spec.homepage      = 'https://domain.com'
+    spec.author        = { 'abc' => 'abc@gmail.com' }
+    spec.license       = { :type => 'MIT', :file => 'LICENSE' }
+    s.source = { :http => 'https://github.com/phu2810/ChimeSDK/releases/download/1.0.2/PrivateFrameworkA.xcframework.zip' }
+    spec.swift_version = '5.0'
+    spec.ios.deployment_target = '13.0'
+  
+    spec.dependency 'Google-Mobile-Ads-SDK','~> 11.5.0'
+    spec.ios.vendored_frameworks = [
+      "PrivateFrameworkA.xcframework"
+    ]
 end
 
