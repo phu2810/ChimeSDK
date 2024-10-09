@@ -11,6 +11,6 @@ Pod::Spec.new do |spec|
     spec.ios.deployment_target = '13.0'
   
     spec.dependency 'Google-Mobile-Ads-SDK','~> 11.5.0'
-    spec.vendored_frameworks =  "PrivateFrameworkA.xcframework"
+    spec.vendored_frameworks =  "PrivateFrameworkA/PrivateFrameworkA.xcframework"
 end
 
