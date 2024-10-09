@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
     spec.name          = 'PrivateFrameworkA'
-    spec.version       = '0.0.2'
+    spec.version       = '0.0.3'
     spec.summary       = 'PrivateFrameworkA for testing'
     spec.description   = 'This is an PrivateFrameworkA which will help us in achieving nothing'
     spec.homepage      = 'https://domain.com'
